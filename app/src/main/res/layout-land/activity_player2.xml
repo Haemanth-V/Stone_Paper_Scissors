@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81D4FA"
+    tools:context=".Player2">
+
+
+    <TextView
+        android:id="@+id/textViewTurn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:text="Player 2's Name" />
+
+    <EditText
+        android:id="@+id/editTextName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewTurn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewTurn2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="25dp"
+        android:text="Player 1's Name" />
+
+    <EditText
+        android:id="@+id/editTextName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editTextName2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewRounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTurn2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Number of Rounds" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:enabled="true"
+        android:onClick="proceedTwoPlayer"
+        android:background="#FF80AB"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/editTextRounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="Enter the Number of Rounds"
+        android:inputType="number" />
+</RelativeLayout>

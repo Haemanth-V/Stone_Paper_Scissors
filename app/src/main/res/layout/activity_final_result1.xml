@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/finalScreen"
+    android:background="#81D4FA"
+    tools:context=".FinalResult1">
+
+    <TextView
+        android:id="@+id/textViewSpacing2P1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textViewFinalScoresPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:layout_marginBottom="18dp"
+        android:background="#FFFF8D"
+        android:layout_above="@id/textViewSpacing2P1" />
+
+    <TextView
+        android:id="@+id/textViewFinalRounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="17sp"
+        android:background="#FFFF8D"
+        android:layout_below="@id/textViewSpacing2P1" />
+
+    <TextView
+        android:id="@+id/textViewFinalWinnerP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#880E4F"
+        android:textColor="#FFF8E1"
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:textSize="36sp"/>
+
+    <Button
+        android:id="@+id/buttonExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:onClick="exit1"
+        android:background="#FFCDD2"
+        android:text="EXIT" />
+
+</RelativeLayout>

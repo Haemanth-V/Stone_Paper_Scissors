@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81D4FA"
+    tools:context=".Player1">
+    <TextView
+        android:id="@+id/textViewSpacing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/textViewTurn1P1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewSpacing"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:text="Player 1's Name"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextName1P1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter your Name"
+        android:layout_toRightOf="@id/textViewTurn1P1"
+        android:layout_above="@id/textViewSpacing"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewRoundsP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSpacing"
+        android:layout_marginLeft="8dp"
+        android:text="Number of Rounds"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/buttonSubmitP1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextRoundsP1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="proceedOnePlayer"
+        android:text="Submit"
+        android:background="#FF80AB"
+        android:enabled="true"/>
+
+    <EditText
+        android:id="@+id/editTextRoundsP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_toRightOf="@id/textViewRoundsP1"
+        android:layout_below="@id/textViewSpacing"
+        android:hint="Should be >0"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="number" />
+</RelativeLayout>

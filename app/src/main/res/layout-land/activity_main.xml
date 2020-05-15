@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81D4FA"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="CHOOSE  GAME"
+        android:background="#FFFF8D"
+        android:textSize="24sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:id="@+id/emptyView"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/buttonTwoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:onClick="twoPlayer"
+        android:text="2 Players"
+        android:background="#FFA726"
+        android:layout_below="@id/emptyView"/>
+
+    <Button
+        android:id="@+id/buttonOnePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@id/emptyView"
+        android:layout_centerHorizontal="true"
+        android:onClick="onePlayer"
+        android:background="#FFA726"
+        android:text="1 Player" />
+</RelativeLayout>

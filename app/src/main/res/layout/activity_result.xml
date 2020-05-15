@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF8D"
+    tools:context=".Result">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:id="@+id/player1View" >
+
+        <TextView
+            android:id="@+id/textViewP1Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/textViewP1Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewP1Result"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="TextView"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/imageViewP1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="#FFFFFF"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:id="@+id/player2View">
+    <TextView
+        android:id="@+id/textViewP2Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/textViewP2Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewP2Result"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="TextView"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/imageViewP2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="#FFFFFF"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClicking"
+            android:background="#E3F2FD"
+            android:text="Continue" />
+    </RelativeLayout>
+</LinearLayout>
